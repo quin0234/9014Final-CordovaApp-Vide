@@ -1,0 +1,209 @@
+
+/*START OF MY CSS*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 9px;
+    /* ADD the Google sans-serif font to this font stack */
+    font-family: 'Cabin', sans-serif;
+}
+
+html,
+body {
+    background-color: #38003C;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet');
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+[data-role="nav"] {
+    position: fixed;
+    z-index: 30;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: #00FF87;
+}
+
+.tabs {
+    list-style: none;
+}
+
+.tabs li {
+    float: left;
+    width: 50%;
+}
+
+.tabs a {
+    display: block;
+    line-height: 4rem;
+    font-size: 15sp;
+    text-align: center;
+    text-decoration: none;
+    color: #38003C;
+    margin: 0 auto;
+}
+
+.buttons {
+    height: 5rem;
+    width: 75%;
+}
+
+/*END NAVIGATION*/
+h1 {
+    width: 80%;
+    height: 100px;
+    vertical-align: baseline;
+    line-height: 180px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 20sp;
+    background-image:url("../img/header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+}
+/*PAGE 1*/
+.date {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border-top: solid 2px #38003C;
+    background-color: #A6004C;
+    color: #fff;
+}
+
+.date>h3 {
+    margin-top: 5px;
+}
+.scoredd {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #A6004C;
+    color: #fff;
+}
+
+.scoredd>p {
+    display: inline;
+    line-height: 50px;
+    vertical-align: middle;
+    
+    
+}
+#hometeamlogo {
+    float:left;
+    height: 50px;
+    width: 50px;
+}
+
+#awayteamlogo {
+   
+    float: right;
+    height: 50px;
+    width: 50px;;
+}
+
+#hometeamlogo>img, #awayteamlogo>img {
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.hometeam, .awayteam {
+    width: 20%;
+    height: 60px;
+    display: inline-block;
+    
+}
+.hometeamscore, .awayteamscore {
+    width: 10%;
+    height: 60px;
+    display: inline-block;
+    line-height: 60px;
+    
+}
+
+/* Start 2 page display */
+/*pages are not displayed*/
+
+[data-role="page"] {
+    width: 80%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 10;
+    padding-bottom: 5rem;
+    /* to match the height of the nav bar */
+    padding-top: 4rem;
+    /* leaving space for the heading */
+}
+
+[data-role="page"].active {
+    display: block;
+    z-index: 20;
+    width: 100%;
+}
+
+#teamStandings {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+#teamStandings th,
+#teamStandings td {
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    line-height: 2rem;
+    background-color: #A6004C;
+    color: #fff;
+    border-bottom: solid 2px #38003C;
+}
+
+tr:nth-child(n+5) {
+    display: none;
+}
+
+td {
+    background-color: #A6004C;
+}
+td>img {
+    width: 25px;
+    height: 25px;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.button {
+    background-image: url("../img/refresh.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #00FF87;
+    border: none;
+    color: #38003C;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 40%;
+    height: 50px;
+}
+
+#myimage {
+    height: 4rem;
+    width: 100%;
+}
+/* End 2 page display */
+

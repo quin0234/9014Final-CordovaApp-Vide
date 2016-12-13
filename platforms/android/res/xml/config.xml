@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="ca.edumedia.quin0234.vide" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>Vide - Paul Quinnell</name>
+    <description>
+        Greatest Football Score app ever made. Final for MAD9014. 
+    </description>
+    <author email="quin0234@algonquinlive.com" href="http://cordova.io">
+        Paul Edward Quinnell
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <splash density="land-hdpi" src="res/screens/splash-land-hdpi.png" />
+    <splash density="land-mdpi" src="res/screens/splash-land-mdpi.png" />
+    <splash density="land-xhdpi" src="res/screens/splash-land-xhdpi.png" />
+    <splash density="land-xxhdpi" src="res/screens/splash-land-xxhdpi.png" />
+    <splash density="land-xxxhdpi" src="res/screens/splash-land-xxxhdpi.png" />
+    <splash density="port-hdpi" src="res/screens/splash-port-hdpi.png" />
+    <splash density="port-mdpi" src="res/screens/splash-port-mdpi.png" />
+    <splash density="port-xhdpi" src="res/screens/splash-port-xhdpi.png" />
+    <splash density="port-xxhdpi" src="res/screens/splash-port-xxhdpi.png" />
+    <splash density="port-xxxhdpi" src="res/screens/splash-port-xxxhdpi.png" />
+    <icon density="mdpi" src="res/icons/icon-48-mdpi.png" />
+    <icon density="hdpi" src="res/icons/icon-72-hdpi.png" />
+    <icon density="xhdpi" src="res/icons/icon-96-xhdpi.png" />
+    <icon density="xxhdpi" src="res/icons/icon-144-xxhdpi.png" />
+    <icon density="xxxhdpi" src="res/icons/icon-192-xxxhdpi.png" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="5000" />
+</widget>
